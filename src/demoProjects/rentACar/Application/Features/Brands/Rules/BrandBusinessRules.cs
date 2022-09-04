@@ -24,5 +24,11 @@ namespace Application.Features.Brands.Rules
             IPaginate<Brand> result = await _brandRepository.GetListAsync(b => b.Name == name);//Başka isimde marka varmı git bak
             if (result.Items.Any()) throw new BusinessException("Brand name exists.");//Eğer Varsa bu hatayı fırlat.BusinessException metodunu kullandık
         }
+
+        public async Task BrandShouldExistWhenRequested(Brand brand)
+        {
+
+            if (brand == null) throw new BusinessException("Requested brand does not exists.");//null mı değil mi bak boş olamaz de
+        }
     }
 }
