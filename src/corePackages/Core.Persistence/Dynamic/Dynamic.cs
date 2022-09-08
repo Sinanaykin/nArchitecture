@@ -2,8 +2,8 @@
 
 public class Dynamic
 {
-    public IEnumerable<Sort>? Sort { get; set; }
-    public Filter? Filter { get; set; }
+    public IEnumerable<Sort>? Sort { get; set; }//azalan artan yapabiliriz
+    public Filter? Filter { get; set; }//Filtre koyabiliriz 
 
     public Dynamic()
     {
