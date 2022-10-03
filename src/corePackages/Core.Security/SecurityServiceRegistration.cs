@@ -1,4 +1,4 @@
-﻿using Core.Security.EmailAuthenticator;
+﻿ using Core.Security.EmailAuthenticator;
 using Core.Security.JWT;
 using Core.Security.OtpAuthenticator;
 using Core.Security.OtpAuthenticator.OtpNet;
